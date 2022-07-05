@@ -22,9 +22,12 @@ public class S3Uploader {
 
     private final AmazonS3Client amazonS3Client;
 
+    // todo properties 파일을 yml 로 변경해주세요.
     @Value("${cloud.aws.s3.bucket}")
     public String bucket;  // S3 버킷 이름
 
+    // todo 로컬에 저장하지 않고 업로드 하도록 변경해주세요. stream 으로 그대로 저장하면 되겠지요.
+    // todo 업로드 결과를 로컬 DB에 저장하도록 해주세요. 컬럼들: filename, url, ...
     public String upload(MultipartFile multipartFile, String dirName) throws IOException {
         File uploadFile = convert(multipartFile)  // 파일 변환할 수 없으면 에러
                 .orElseThrow(() -> new IllegalArgumentException("error: MultipartFile -> File convert fail"));
