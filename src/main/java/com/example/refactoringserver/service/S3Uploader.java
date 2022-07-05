@@ -22,7 +22,6 @@ public class S3Uploader {
 
     private final AmazonS3Client amazonS3Client;
 
-    // todo properties 파일을 yml 로 변경해주세요.
     @Value("${cloud.aws.s3.bucket}")
     public String bucket;  // S3 버킷 이름
 

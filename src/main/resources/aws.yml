@@ -1,0 +1,12 @@
+cloud:
+  aws:
+    credentials:
+      accessKey: AKIARQATBQZGPPZWHJXV
+      secretKey: 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
+    s3:
+      bucket: refactoringbucdket
+    region:
+        static: ap-northeast-2
+    stack:
+      auto: false
+
