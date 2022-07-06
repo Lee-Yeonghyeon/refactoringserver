@@ -29,10 +29,10 @@ public class S3Uploader {
     public String bucket;  // S3 버킷 이름
 
     // todo 업로드 결과를 로컬 DB에 저장하도록 해주세요. 컬럼들: filename, url, ...
-    public String upload(MultipartFile multipartFile, String dirName) throws IOException {
+    public String upload(MultipartFile multipartFile) throws IOException {
 
         //S3에 저장될 파일 이름
-        String fileName = dirName + "/" + UUID.randomUUID() + multipartFile.getOriginalFilename();
+        String fileName = UUID.randomUUID() + multipartFile.getOriginalFilename();
         ObjectMetadata objectMetadata = new ObjectMetadata();
         objectMetadata.setContentType((multipartFile.getContentType()));
 
