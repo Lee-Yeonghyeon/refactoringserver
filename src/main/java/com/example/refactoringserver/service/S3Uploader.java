@@ -38,6 +38,7 @@ public class S3Uploader {
         String fileName = UUID.randomUUID() + multipartFile.getOriginalFilename();
         ObjectMetadata objectMetadata = new ObjectMetadata();
         objectMetadata.setContentType((multipartFile.getContentType()));
+        objectMetadata.setContentLength(multipartFile.getSize());
 
         //S3로 파일 업로드
         try(InputStream inputStream = multipartFile.getInputStream()){
