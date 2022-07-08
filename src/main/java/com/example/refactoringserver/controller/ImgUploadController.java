@@ -3,6 +3,7 @@ package com.example.refactoringserver.controller;
 import com.example.refactoringserver.entity.FileInfoEntity;
 import com.example.refactoringserver.repo.FileInfoRepository;
 import com.example.refactoringserver.service.S3Uploader;
+import com.example.refactoringserver.telegram.RefactoryBot;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -18,6 +19,7 @@ public class ImgUploadController {
 
     private final S3Uploader s3Uploader;
     private final FileInfoRepository fileInfoRepository;
+    private final RefactoryBot refactoryBot;
 
     @GetMapping("/findAll")
     public List<FileInfoEntity> findAllMember(){
@@ -25,20 +27,26 @@ public class ImgUploadController {
     }
 
     @PostMapping("/saveImage")
-    public FileInfoEntity upload(@RequestParam("images") MultipartFile multipartFile) throws IOException {
-        String s3Url = s3Uploader.upload(multipartFile);
+    public FileInfoEntity upload(@RequestParam("images") MultipartFile multipartFile) {
+        try{
+            String s3Url = s3Uploader.upload(multipartFile);
 
-        BufferedImage image = ImageIO.read(multipartFile.getInputStream());
+            BufferedImage image = ImageIO.read(multipartFile.getInputStream());
 
-        final FileInfoEntity fileInfo = FileInfoEntity.builder()
-                .fileName(multipartFile.getOriginalFilename())
-                .format(multipartFile.getContentType())
-                .size(multipartFile.getSize())
-                .width(image.getWidth())
-                .height(image.getHeight())
-                .url(s3Url)
-                .build();
+            final FileInfoEntity fileInfo = FileInfoEntity.builder()
+                    .fileName(multipartFile.getOriginalFilename())
+                    .format(multipartFile.getContentType())
+                    .size(multipartFile.getSize())
+                    .width(image.getWidth())
+                    .height(image.getHeight())
+                    .url(s3Url)
+                    .build();
 
-        return fileInfoRepository.save(fileInfo);
+            return fileInfoRepository.save(fileInfo);
+
+        } catch (IOException ioE){
+            refactoryBot.sendMessage(ioE.toString());
+        }
+        return null;
     }
 }

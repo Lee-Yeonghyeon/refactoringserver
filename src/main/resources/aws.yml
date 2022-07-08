@@ -10,3 +10,9 @@ cloud:
     stack:
       auto: false
 
+telegram:
+  creditials:
+    botName: refactory_dev_bot
+    chatId: 5536370992
+    token: 5305075075:AAFcOwWK3JXJaTiR1q6py478mg-vEXYDjjU
+

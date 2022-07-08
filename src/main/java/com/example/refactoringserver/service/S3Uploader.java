@@ -6,6 +6,7 @@ import com.amazonaws.services.s3.model.ObjectMetadata;
 import com.amazonaws.services.s3.model.PutObjectRequest;
 import com.example.refactoringserver.entity.FileInfoEntity;
 import com.example.refactoringserver.repo.FileInfoRepository;
+import com.example.refactoringserver.telegram.RefactoryBot;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.tomcat.util.http.fileupload.FileUploadException;
@@ -28,6 +29,7 @@ import java.util.UUID;
 public class S3Uploader {
 
     private final AmazonS3Client amazonS3Client;
+    private final RefactoryBot refactoryBot;
 
     @Value("${cloud.aws.s3.bucket}")
     public String bucket;  // S3 버킷 이름
@@ -44,8 +46,8 @@ public class S3Uploader {
         try(InputStream inputStream = multipartFile.getInputStream()){
             amazonS3Client.putObject(new PutObjectRequest(bucket, fileName, inputStream, objectMetadata)
                     .withCannedAcl(CannedAccessControlList.PublicRead));
-        }catch (IOException e){
-
+        } catch (IOException ioE){
+            refactoryBot.sendMessage(ioE.toString());
         }
 
         return amazonS3Client.getUrl(bucket, fileName).toString();
