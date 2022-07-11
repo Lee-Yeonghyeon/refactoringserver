@@ -10,6 +10,7 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 @Slf4j
 @Component
 public class RefactoryBot extends TelegramLongPollingBot {
+
     private String BOT_NAME = "refactory_dev_bot";
     private String AUTH_KEY = "5305075075:AAFcOwWK3JXJaTiR1q6py478mg-vEXYDjjU";
     private String CHAT_ID = "5536370992";
@@ -30,9 +31,9 @@ public class RefactoryBot extends TelegramLongPollingBot {
     }
 
     public void sendMessage(String sendMessage){
-        SendMessage message = new SendMessage()
-                .setChatId(CHAT_ID)
-                .setText(sendMessage);
+        SendMessage message  = new SendMessage();
+        message.setChatId(CHAT_ID);
+        message.setText(sendMessage);
         try {
             execute(message);
         } catch (TelegramApiException e) {

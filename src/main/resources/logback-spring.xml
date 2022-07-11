@@ -61,10 +61,10 @@
         </rollingPolicy>
     </appender>
 
-    <root level="INFO">
-        <appender-ref ref="FILE-INFO"/>
-        <appender-ref ref="FILE-WARN"/>
-        <appender-ref ref="FILE-ERROR"/>
-    </root>
+<!--    <root level="INFO">-->
+<!--        <appender-ref ref="FILE-INFO"/>-->
+<!--        <appender-ref ref="FILE-WARN"/>-->
+<!--        <appender-ref ref="FILE-ERROR"/>-->
+<!--    </root>-->
 
 </configuration>

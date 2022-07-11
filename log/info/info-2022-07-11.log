@@ -1,0 +1,239 @@
+[2022-07-11 09:19:58:3348] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.StartupInfoLogger.logStarting:[33m55[0;39m][0;39m - Starting RefactoringServerApplication using Java 11.0.2 on iyeonghyeon-ui-MacBookPro.local with PID 1355 (/Users/iyeonghyeon/Desktop/refactoring_study/refactoring-server/target/classes started by iyeonghyeon in /Users/iyeonghyeon/Desktop/refactoring_study/refactoring-server)
+[2022-07-11 09:19:58:3350] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.SpringApplication.logStartupProfileInfo:[33m634[0;39m][0;39m - No active profile set, falling back to 1 default profile: "default"
+[2022-07-11 09:20:02:6949] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:[33m132[0;39m][0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-07-11 09:20:02:7006] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:[33m201[0;39m][0;39m - Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+[2022-07-11 09:20:03:7696] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:[33m108[0;39m][0;39m - Tomcat initialized with port(s): 8080 (http)
+[2022-07-11 09:20:03:7703] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+[2022-07-11 09:20:03:7704] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting service [Tomcat]
+[2022-07-11 09:20:03:7704] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting Servlet engine: [Apache Tomcat/9.0.64]
+[2022-07-11 09:20:03:7798] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing Spring embedded WebApplicationContext
+[2022-07-11 09:20:03:7798] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:[33m292[0;39m][0;39m - Root WebApplicationContext: initialization completed in 4417 ms
+[2022-07-11 09:20:03:7935] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.getConnection:[33m110[0;39m][0;39m - HikariPool-1 - Starting...
+[2022-07-11 09:20:04:9060] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:[33m31[0;39m][0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-07-11 09:20:04:9131] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.Version.logVersion:[33m44[0;39m][0;39m - HHH000412: Hibernate ORM core version 5.6.9.Final
+[2022-07-11 09:20:04:9251] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>:[33m56[0;39m][0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-07-11 09:20:04:9321] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.getConnection:[33m110[0;39m][0;39m - HikariPool-1 - Starting...
+[2022-07-11 09:20:05:10341] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.dialect.Dialect.<init>:[33m175[0;39m][0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[2022-07-11 09:20:06:10751] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService:[33m52[0;39m][0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-07-11 09:20:06:10758] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory:[33m437[0;39m][0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-07-11 09:20:06:11183] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:[33m53[0;39m][0;39m - Adding welcome page: class path resource [static/index.html]
+[2022-07-11 09:20:06:11374] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting ProtocolHandler ["http-nio-127.0.0.1-8080"]
+[2022-07-11 09:20:06:11392] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:[33m220[0;39m][0;39m - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-07-11 09:20:06:11402] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.StartupInfoLogger.logStarted:[33m61[0;39m][0;39m - Started RefactoringServerApplication in 8.461 seconds (JVM running for 11.814)
+[2022-07-11 09:20:43:48026] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy:[33m651[0;39m][0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-07-11 09:20:48:2115] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.StartupInfoLogger.logStarting:[33m55[0;39m][0;39m - Starting RefactoringServerApplication using Java 11.0.2 on iyeonghyeon-ui-MacBookPro.local with PID 1383 (/Users/iyeonghyeon/Desktop/refactoring_study/refactoring-server/target/classes started by iyeonghyeon in /Users/iyeonghyeon/Desktop/refactoring_study/refactoring-server)
+[2022-07-11 09:20:48:2116] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.SpringApplication.logStartupProfileInfo:[33m634[0;39m][0;39m - No active profile set, falling back to 1 default profile: "default"
+[2022-07-11 09:20:51:5549] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:[33m132[0;39m][0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-07-11 09:20:51:5587] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:[33m201[0;39m][0;39m - Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+[2022-07-11 09:20:52:6096] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:[33m108[0;39m][0;39m - Tomcat initialized with port(s): 8080 (http)
+[2022-07-11 09:20:52:6102] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+[2022-07-11 09:20:52:6102] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting service [Tomcat]
+[2022-07-11 09:20:52:6103] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting Servlet engine: [Apache Tomcat/9.0.64]
+[2022-07-11 09:20:52:6192] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing Spring embedded WebApplicationContext
+[2022-07-11 09:20:52:6192] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:[33m292[0;39m][0;39m - Root WebApplicationContext: initialization completed in 4043 ms
+[2022-07-11 09:20:52:6287] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.getConnection:[33m110[0;39m][0;39m - HikariPool-1 - Starting...
+[2022-07-11 09:20:53:7367] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:[33m31[0;39m][0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-07-11 09:20:53:7410] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.Version.logVersion:[33m44[0;39m][0;39m - HHH000412: Hibernate ORM core version 5.6.9.Final
+[2022-07-11 09:20:53:7504] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>:[33m56[0;39m][0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-07-11 09:20:53:7568] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.getConnection:[33m110[0;39m][0;39m - HikariPool-1 - Starting...
+[2022-07-11 09:20:54:8580] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.dialect.Dialect.<init>:[33m175[0;39m][0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[2022-07-11 09:20:55:8908] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService:[33m52[0;39m][0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-07-11 09:20:55:8914] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory:[33m437[0;39m][0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-07-11 09:20:55:9240] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:[33m53[0;39m][0;39m - Adding welcome page: class path resource [static/index.html]
+[2022-07-11 09:20:55:9380] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting ProtocolHandler ["http-nio-127.0.0.1-8080"]
+[2022-07-11 09:20:55:9413] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:[33m220[0;39m][0;39m - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-07-11 09:20:55:9423] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.StartupInfoLogger.logStarted:[33m61[0;39m][0;39m - Started RefactoringServerApplication in 7.602 seconds (JVM running for 9.753)
+[2022-07-11 09:21:04:17894] [32m[http-nio-127.0.0.1-8080-exec-1][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-07-11 09:21:04:17894] [32m[http-nio-127.0.0.1-8080-exec-1][0;39m [34mINFO [0;39m [1;37m[org.springframework.web.servlet.FrameworkServlet.initServletBean:[33m525[0;39m][0;39m - Initializing Servlet 'dispatcherServlet'
+[2022-07-11 09:21:04:17896] [32m[http-nio-127.0.0.1-8080-exec-1][0;39m [34mINFO [0;39m [1;37m[org.springframework.web.servlet.FrameworkServlet.initServletBean:[33m547[0;39m][0;39m - Completed initialization in 1 ms
+[2022-07-11 09:26:19:332817] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy:[33m651[0;39m][0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-07-11 09:26:23:2083] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.StartupInfoLogger.logStarting:[33m55[0;39m][0;39m - Starting RefactoringServerApplication using Java 11.0.2 on iyeonghyeon-ui-MacBookPro.local with PID 1920 (/Users/iyeonghyeon/Desktop/refactoring_study/refactoring-server/target/classes started by iyeonghyeon in /Users/iyeonghyeon/Desktop/refactoring_study/refactoring-server)
+[2022-07-11 09:26:23:2084] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.SpringApplication.logStartupProfileInfo:[33m634[0;39m][0;39m - No active profile set, falling back to 1 default profile: "default"
+[2022-07-11 09:26:25:3598] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:[33m132[0;39m][0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-07-11 09:26:25:3637] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:[33m201[0;39m][0;39m - Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interfaces.
+[2022-07-11 09:26:26:4203] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:[33m108[0;39m][0;39m - Tomcat initialized with port(s): 8080 (http)
+[2022-07-11 09:26:26:4210] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+[2022-07-11 09:26:26:4210] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting service [Tomcat]
+[2022-07-11 09:26:26:4210] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting Servlet engine: [Apache Tomcat/9.0.64]
+[2022-07-11 09:26:26:4306] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing Spring embedded WebApplicationContext
+[2022-07-11 09:26:26:4306] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:[33m292[0;39m][0;39m - Root WebApplicationContext: initialization completed in 2188 ms
+[2022-07-11 09:26:26:4430] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.getConnection:[33m110[0;39m][0;39m - HikariPool-1 - Starting...
+[2022-07-11 09:26:26:4584] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.getConnection:[33m123[0;39m][0;39m - HikariPool-1 - Start completed.
+[2022-07-11 09:26:26:4627] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:[33m31[0;39m][0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-07-11 09:26:26:4669] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.Version.logVersion:[33m44[0;39m][0;39m - HHH000412: Hibernate ORM core version 5.6.9.Final
+[2022-07-11 09:26:26:4803] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>:[33m56[0;39m][0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-07-11 09:26:26:4887] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.dialect.Dialect.<init>:[33m175[0;39m][0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[2022-07-11 09:26:27:5301] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService:[33m52[0;39m][0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-07-11 09:26:27:5313] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory:[33m437[0;39m][0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-07-11 09:26:27:5686] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:[33m53[0;39m][0;39m - Adding welcome page: class path resource [static/index.html]
+[2022-07-11 09:26:27:5848] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting ProtocolHandler ["http-nio-127.0.0.1-8080"]
+[2022-07-11 09:26:27:5862] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:[33m220[0;39m][0;39m - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-07-11 09:26:27:5870] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.StartupInfoLogger.logStarted:[33m61[0;39m][0;39m - Started RefactoringServerApplication in 4.125 seconds (JVM running for 6.183)
+[2022-07-11 09:26:32:10272] [32m[http-nio-127.0.0.1-8080-exec-1][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-07-11 09:26:32:10273] [32m[http-nio-127.0.0.1-8080-exec-1][0;39m [34mINFO [0;39m [1;37m[org.springframework.web.servlet.FrameworkServlet.initServletBean:[33m525[0;39m][0;39m - Initializing Servlet 'dispatcherServlet'
+[2022-07-11 09:26:32:10274] [32m[http-nio-127.0.0.1-8080-exec-1][0;39m [34mINFO [0;39m [1;37m[org.springframework.web.servlet.FrameworkServlet.initServletBean:[33m547[0;39m][0;39m - Completed initialization in 1 ms
+[2022-07-11 09:51:56:1534558] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy:[33m651[0;39m][0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-07-11 09:51:56:1534561] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.close:[33m350[0;39m][0;39m - HikariPool-1 - Shutdown initiated...
+[2022-07-11 09:51:56:1534569] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.close:[33m352[0;39m][0;39m - HikariPool-1 - Shutdown completed.
+[2022-07-11 09:52:01:2122] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.StartupInfoLogger.logStarting:[33m55[0;39m][0;39m - Starting RefactoringServerApplication using Java 11.0.2 on iyeonghyeon-ui-MacBookPro.local with PID 2032 (/Users/iyeonghyeon/Desktop/refactoring_study/refactoring-server/target/classes started by iyeonghyeon in /Users/iyeonghyeon/Desktop/refactoring_study/refactoring-server)
+[2022-07-11 09:52:01:2123] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.SpringApplication.logStartupProfileInfo:[33m634[0;39m][0;39m - No active profile set, falling back to 1 default profile: "default"
+[2022-07-11 09:52:05:5627] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:[33m132[0;39m][0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-07-11 09:52:05:5664] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:[33m201[0;39m][0;39m - Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interfaces.
+[2022-07-11 09:52:05:6243] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:[33m108[0;39m][0;39m - Tomcat initialized with port(s): 8080 (http)
+[2022-07-11 09:52:05:6250] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+[2022-07-11 09:52:05:6250] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting service [Tomcat]
+[2022-07-11 09:52:05:6251] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting Servlet engine: [Apache Tomcat/9.0.64]
+[2022-07-11 09:52:05:6354] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing Spring embedded WebApplicationContext
+[2022-07-11 09:52:05:6354] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:[33m292[0;39m][0;39m - Root WebApplicationContext: initialization completed in 4197 ms
+[2022-07-11 09:52:06:6464] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.getConnection:[33m110[0;39m][0;39m - HikariPool-1 - Starting...
+[2022-07-11 09:52:06:6585] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.getConnection:[33m123[0;39m][0;39m - HikariPool-1 - Start completed.
+[2022-07-11 09:52:06:6621] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:[33m31[0;39m][0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-07-11 09:52:06:6657] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.Version.logVersion:[33m44[0;39m][0;39m - HHH000412: Hibernate ORM core version 5.6.9.Final
+[2022-07-11 09:52:06:6778] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>:[33m56[0;39m][0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-07-11 09:52:06:6883] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.dialect.Dialect.<init>:[33m175[0;39m][0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[2022-07-11 09:52:06:7270] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService:[33m52[0;39m][0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-07-11 09:52:06:7279] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory:[33m437[0;39m][0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-07-11 09:52:07:7635] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:[33m53[0;39m][0;39m - Adding welcome page: class path resource [static/index.html]
+[2022-07-11 09:52:07:7790] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting ProtocolHandler ["http-nio-127.0.0.1-8080"]
+[2022-07-11 09:52:07:7804] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:[33m220[0;39m][0;39m - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-07-11 09:52:07:7812] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.StartupInfoLogger.logStarted:[33m61[0;39m][0;39m - Started RefactoringServerApplication in 6.04 seconds (JVM running for 8.133)
+[2022-07-11 09:52:09:9898] [32m[http-nio-127.0.0.1-8080-exec-1][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-07-11 09:52:09:9898] [32m[http-nio-127.0.0.1-8080-exec-1][0;39m [34mINFO [0;39m [1;37m[org.springframework.web.servlet.FrameworkServlet.initServletBean:[33m525[0;39m][0;39m - Initializing Servlet 'dispatcherServlet'
+[2022-07-11 09:52:09:9899] [32m[http-nio-127.0.0.1-8080-exec-1][0;39m [34mINFO [0;39m [1;37m[org.springframework.web.servlet.FrameworkServlet.initServletBean:[33m547[0;39m][0;39m - Completed initialization in 1 ms
+[2022-07-11 09:56:46:286403] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy:[33m651[0;39m][0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-07-11 09:56:46:286406] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.close:[33m350[0;39m][0;39m - HikariPool-1 - Shutdown initiated...
+[2022-07-11 09:56:46:286414] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.close:[33m352[0;39m][0;39m - HikariPool-1 - Shutdown completed.
+[2022-07-11 09:56:50:1894] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.StartupInfoLogger.logStarting:[33m55[0;39m][0;39m - Starting RefactoringServerApplication using Java 11.0.2 on iyeonghyeon-ui-MacBookPro.local with PID 2068 (/Users/iyeonghyeon/Desktop/refactoring_study/refactoring-server/target/classes started by iyeonghyeon in /Users/iyeonghyeon/Desktop/refactoring_study/refactoring-server)
+[2022-07-11 09:56:50:1895] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.SpringApplication.logStartupProfileInfo:[33m634[0;39m][0;39m - No active profile set, falling back to 1 default profile: "default"
+[2022-07-11 09:56:54:5418] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:[33m132[0;39m][0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-07-11 09:56:54:5459] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:[33m201[0;39m][0;39m - Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interfaces.
+[2022-07-11 09:56:54:6068] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:[33m108[0;39m][0;39m - Tomcat initialized with port(s): 8080 (http)
+[2022-07-11 09:56:54:6076] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+[2022-07-11 09:56:54:6076] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting service [Tomcat]
+[2022-07-11 09:56:54:6077] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting Servlet engine: [Apache Tomcat/9.0.64]
+[2022-07-11 09:56:55:6156] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing Spring embedded WebApplicationContext
+[2022-07-11 09:56:55:6156] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:[33m292[0;39m][0;39m - Root WebApplicationContext: initialization completed in 4225 ms
+[2022-07-11 09:56:55:6266] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.getConnection:[33m110[0;39m][0;39m - HikariPool-1 - Starting...
+[2022-07-11 09:56:55:6385] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.getConnection:[33m123[0;39m][0;39m - HikariPool-1 - Start completed.
+[2022-07-11 09:56:55:6426] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:[33m31[0;39m][0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-07-11 09:56:55:6461] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.Version.logVersion:[33m44[0;39m][0;39m - HHH000412: Hibernate ORM core version 5.6.9.Final
+[2022-07-11 09:56:55:6608] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>:[33m56[0;39m][0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-07-11 09:56:55:6688] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.dialect.Dialect.<init>:[33m175[0;39m][0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[2022-07-11 09:56:56:7114] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService:[33m52[0;39m][0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-07-11 09:56:56:7123] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory:[33m437[0;39m][0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-07-11 09:56:56:7470] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:[33m53[0;39m][0;39m - Adding welcome page: class path resource [static/index.html]
+[2022-07-11 09:56:56:7629] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting ProtocolHandler ["http-nio-127.0.0.1-8080"]
+[2022-07-11 09:56:56:7643] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:[33m220[0;39m][0;39m - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-07-11 09:56:56:7651] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.StartupInfoLogger.logStarted:[33m61[0;39m][0;39m - Started RefactoringServerApplication in 6.111 seconds (JVM running for 7.974)
+[2022-07-11 09:56:57:8664] [32m[http-nio-127.0.0.1-8080-exec-1][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-07-11 09:56:57:8664] [32m[http-nio-127.0.0.1-8080-exec-1][0;39m [34mINFO [0;39m [1;37m[org.springframework.web.servlet.FrameworkServlet.initServletBean:[33m525[0;39m][0;39m - Initializing Servlet 'dispatcherServlet'
+[2022-07-11 09:56:57:8665] [32m[http-nio-127.0.0.1-8080-exec-1][0;39m [34mINFO [0;39m [1;37m[org.springframework.web.servlet.FrameworkServlet.initServletBean:[33m547[0;39m][0;39m - Completed initialization in 1 ms
+[2022-07-11 10:00:29:220355] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy:[33m651[0;39m][0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-07-11 10:00:29:220359] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.close:[33m350[0;39m][0;39m - HikariPool-1 - Shutdown initiated...
+[2022-07-11 10:00:29:220367] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.close:[33m352[0;39m][0;39m - HikariPool-1 - Shutdown completed.
+[2022-07-11 10:00:34:2084] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.StartupInfoLogger.logStarting:[33m55[0;39m][0;39m - Starting RefactoringServerApplication using Java 11.0.2 on iyeonghyeon-ui-MacBookPro.local with PID 2104 (/Users/iyeonghyeon/Desktop/refactoring_study/refactoring-server/target/classes started by iyeonghyeon in /Users/iyeonghyeon/Desktop/refactoring_study/refactoring-server)
+[2022-07-11 10:00:34:2085] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.SpringApplication.logStartupProfileInfo:[33m634[0;39m][0;39m - No active profile set, falling back to 1 default profile: "default"
+[2022-07-11 10:00:37:5596] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:[33m132[0;39m][0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-07-11 10:00:37:5637] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:[33m201[0;39m][0;39m - Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interfaces.
+[2022-07-11 10:00:38:6227] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:[33m108[0;39m][0;39m - Tomcat initialized with port(s): 8080 (http)
+[2022-07-11 10:00:38:6233] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+[2022-07-11 10:00:38:6234] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting service [Tomcat]
+[2022-07-11 10:00:38:6234] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting Servlet engine: [Apache Tomcat/9.0.64]
+[2022-07-11 10:00:38:6309] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing Spring embedded WebApplicationContext
+[2022-07-11 10:00:38:6309] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:[33m292[0;39m][0;39m - Root WebApplicationContext: initialization completed in 4195 ms
+[2022-07-11 10:00:38:6429] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.getConnection:[33m110[0;39m][0;39m - HikariPool-1 - Starting...
+[2022-07-11 10:00:38:6558] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.getConnection:[33m123[0;39m][0;39m - HikariPool-1 - Start completed.
+[2022-07-11 10:00:38:6600] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:[33m31[0;39m][0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-07-11 10:00:38:6655] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.Version.logVersion:[33m44[0;39m][0;39m - HHH000412: Hibernate ORM core version 5.6.9.Final
+[2022-07-11 10:00:38:6795] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>:[33m56[0;39m][0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-07-11 10:00:38:6881] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.dialect.Dialect.<init>:[33m175[0;39m][0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[2022-07-11 10:00:39:7283] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService:[33m52[0;39m][0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-07-11 10:00:39:7307] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory:[33m437[0;39m][0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-07-11 10:00:39:7642] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:[33m53[0;39m][0;39m - Adding welcome page: class path resource [static/index.html]
+[2022-07-11 10:00:39:7801] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting ProtocolHandler ["http-nio-127.0.0.1-8080"]
+[2022-07-11 10:00:39:7815] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:[33m220[0;39m][0;39m - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-07-11 10:00:39:7823] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.StartupInfoLogger.logStarted:[33m61[0;39m][0;39m - Started RefactoringServerApplication in 6.077 seconds (JVM running for 8.148)
+[2022-07-11 10:00:41:9581] [32m[http-nio-127.0.0.1-8080-exec-1][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-07-11 10:00:41:9581] [32m[http-nio-127.0.0.1-8080-exec-1][0;39m [34mINFO [0;39m [1;37m[org.springframework.web.servlet.FrameworkServlet.initServletBean:[33m525[0;39m][0;39m - Initializing Servlet 'dispatcherServlet'
+[2022-07-11 10:00:41:9582] [32m[http-nio-127.0.0.1-8080-exec-1][0;39m [34mINFO [0;39m [1;37m[org.springframework.web.servlet.FrameworkServlet.initServletBean:[33m547[0;39m][0;39m - Completed initialization in 1 ms
+[2022-07-11 11:20:06:4774872] [32m[refactory_dev_bot Telegram Connection][0;39m [34mINFO [0;39m [1;37m[org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer:[33m273[0;39m][0;39m - Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:448)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:68)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1104)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:823)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:253)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:194)
+[2022-07-11 12:42:58:9746015] [32m[refactory_dev_bot Telegram Connection][0;39m [34mINFO [0;39m [1;37m[org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer:[33m273[0;39m][0;39m - Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:448)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:68)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1104)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:823)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:253)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:194)
+[2022-07-11 13:07:06:11194725] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy:[33m651[0;39m][0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-07-11 13:07:06:11194729] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.close:[33m350[0;39m][0;39m - HikariPool-1 - Shutdown initiated...
+[2022-07-11 13:07:20:2358] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.StartupInfoLogger.logStarting:[33m55[0;39m][0;39m - Starting RefactoringServerApplication using Java 11.0.2 on iyeonghyeon-ui-MacBookPro.local with PID 10755 (/Users/iyeonghyeon/Desktop/refactoring_study/refactoring-server/target/classes started by iyeonghyeon in /Users/iyeonghyeon/Desktop/refactoring_study/refactoring-server)
+[2022-07-11 13:07:20:2359] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.SpringApplication.logStartupProfileInfo:[33m634[0;39m][0;39m - No active profile set, falling back to 1 default profile: "default"
+[2022-07-11 13:07:24:5945] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:[33m132[0;39m][0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-07-11 13:07:24:5990] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:[33m201[0;39m][0;39m - Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+[2022-07-11 13:07:24:6642] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:[33m108[0;39m][0;39m - Tomcat initialized with port(s): 8080 (http)
+[2022-07-11 13:07:24:6649] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+[2022-07-11 13:07:24:6649] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting service [Tomcat]
+[2022-07-11 13:07:24:6650] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting Servlet engine: [Apache Tomcat/9.0.64]
+[2022-07-11 13:07:24:6724] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing Spring embedded WebApplicationContext
+[2022-07-11 13:07:24:6724] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:[33m292[0;39m][0;39m - Root WebApplicationContext: initialization completed in 4332 ms
+[2022-07-11 13:07:25:6840] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.getConnection:[33m110[0;39m][0;39m - HikariPool-1 - Starting...
+[2022-07-11 13:07:26:7939] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:[33m31[0;39m][0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-07-11 13:07:26:8012] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.Version.logVersion:[33m44[0;39m][0;39m - HHH000412: Hibernate ORM core version 5.6.9.Final
+[2022-07-11 13:07:26:8145] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>:[33m56[0;39m][0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-07-11 13:07:26:8226] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.getConnection:[33m110[0;39m][0;39m - HikariPool-1 - Starting...
+[2022-07-11 13:07:27:9239] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.dialect.Dialect.<init>:[33m175[0;39m][0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[2022-07-11 13:07:27:9725] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService:[33m52[0;39m][0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-07-11 13:07:27:9733] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory:[33m437[0;39m][0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-07-11 13:07:28:10131] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:[33m53[0;39m][0;39m - Adding welcome page: class path resource [static/index.html]
+[2022-07-11 13:07:28:10305] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting ProtocolHandler ["http-nio-127.0.0.1-8080"]
+[2022-07-11 13:07:28:10320] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:[33m220[0;39m][0;39m - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-07-11 13:07:28:10330] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.StartupInfoLogger.logStarted:[33m61[0;39m][0;39m - Started RefactoringServerApplication in 8.417 seconds (JVM running for 11.987)
+[2022-07-11 13:08:41:83595] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy:[33m651[0;39m][0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'

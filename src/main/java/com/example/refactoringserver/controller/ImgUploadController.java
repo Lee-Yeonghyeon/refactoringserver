@@ -46,6 +46,8 @@ public class ImgUploadController {
 
         } catch (IOException ioE){
             refactoryBot.sendMessage(ioE.toString());
+        } catch (NullPointerException nullE){
+            refactoryBot.sendMessage(nullE.toString());
         }
         return null;
     }
