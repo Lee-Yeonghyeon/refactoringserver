@@ -6,7 +6,7 @@ target/
 
 aws.yml
 
-log
+log/
 
 ### STS ###
 .apt_generated
