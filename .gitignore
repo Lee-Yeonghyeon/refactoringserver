@@ -6,6 +6,8 @@ target/
 
 aws.yml
 
+log
+
 ### STS ###
 .apt_generated
 .classpath

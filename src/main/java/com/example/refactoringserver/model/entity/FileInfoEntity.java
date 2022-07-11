@@ -1,4 +1,4 @@
-package com.example.refactoringserver.entity;
+package com.example.refactoringserver.model.entity;
 
 import lombok.*;
 

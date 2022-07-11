@@ -1,6 +1,6 @@
 package com.example.refactoringserver.controller;
 
-import com.example.refactoringserver.entity.FileInfoEntity;
+import com.example.refactoringserver.model.entity.FileInfoEntity;
 import com.example.refactoringserver.repo.FileInfoRepository;
 import com.example.refactoringserver.service.S3Uploader;
 import com.example.refactoringserver.telegram.RefactoryBot;
@@ -20,6 +20,13 @@ public class ImgUploadController {
     private final S3Uploader s3Uploader;
     private final FileInfoRepository fileInfoRepository;
     private final RefactoryBot refactoryBot;
+
+    // todo 1. exception handling 추가요청 : Exception 이 발생할 확률이 있다면 catch 해서 처리해야함.
+    // todo 2. null 리턴은 금물.
+    // todo 3. layered architecture 적용 필요.
+    // todo 4. FileInfoEntity --> FileInfoResult 로 변경 후 리턴. (modelMapper 를 활용.)
+    // todo 5. log ?? 필요.
+    // todo 6. api spec 을 정규화해야한다.
 
     @GetMapping("/findAll")
     public List<FileInfoEntity> findAllMember(){
@@ -42,6 +49,7 @@ public class ImgUploadController {
                     .url(s3Url)
                     .build();
 
+            // todo 요청/응답(일부) 에 대한 로그 필요.
             return fileInfoRepository.save(fileInfo);
 
         } catch (IOException ioE){
