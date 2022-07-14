@@ -6,7 +6,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
 @SpringBootApplication
@@ -17,12 +16,7 @@ public class RefactoringServerApplication {
 	public static void main(String[] args) throws TelegramApiException {
 
 		TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
-
-		try{
-			botsApi.registerBot(new RefactoryBot());
-		} catch (TelegramApiRequestException e) {
-			throw new RuntimeException(e);
-		}
+		botsApi.registerBot(new RefactoryBot());
 
 		new SpringApplicationBuilder(RefactoringServerApplication.class)
 				.properties(APPLICATION_LOCATIONS)

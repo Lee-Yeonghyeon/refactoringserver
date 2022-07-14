@@ -30,7 +30,7 @@ public class RefactoryBot extends TelegramLongPollingBot {
         return AUTH_KEY;
     }
 
-    public void sendMessage(String sendMessage){
+    public void sendMessage(String sendMessage) {
         SendMessage message  = new SendMessage();
         message.setChatId(CHAT_ID);
         message.setText(sendMessage);
