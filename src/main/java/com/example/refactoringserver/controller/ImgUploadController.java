@@ -3,6 +3,7 @@ package com.example.refactoringserver.controller;
 import com.example.refactoringserver.model.result.RestResult;
 import com.example.refactoringserver.service.ImgUploadService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -12,6 +13,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 import java.util.List;
 
+@Slf4j
 @RestController
 @RequiredArgsConstructor
 public class ImgUploadController {
@@ -27,13 +29,15 @@ public class ImgUploadController {
 
     @GetMapping("/findAll")
     public List<RestResult> findAllFile() {
+        log.info("/findAllFile is called");
         return imgUploadService.findAllFile();
     }
 
     @PostMapping("/saveImage")
     public RestResult upload(@RequestParam("images") MultipartFile multipartFile) throws IOException {
-            // todo 요청/응답(일부) 에 대한 로그 필요.
-            return imgUploadService.upload(multipartFile);
+        // todo 요청/응답(일부) 에 대한 로그 필요.
+        log.info("/saveImage filename: {}", multipartFile.getOriginalFilename());
+        return imgUploadService.upload(multipartFile);
     }
 
 }

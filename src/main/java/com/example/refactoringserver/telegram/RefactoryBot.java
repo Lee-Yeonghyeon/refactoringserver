@@ -36,6 +36,7 @@ public class RefactoryBot extends TelegramLongPollingBot {
         message.setText(sendMessage);
         try {
             execute(message);
+            log.info("Exception Occurred: {}", sendMessage);
         } catch (TelegramApiException e) {
             throw new RuntimeException(e);
         }
