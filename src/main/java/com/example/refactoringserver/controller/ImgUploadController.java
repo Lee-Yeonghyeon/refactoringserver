@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.IOException;
 import java.util.List;
 
 @Slf4j
@@ -21,11 +20,11 @@ public class ImgUploadController {
     private final ImgUploadService imgUploadService;
 
     // todo 1. exception handling 추가요청 : Exception 이 발생할 확률이 있다면 catch 해서 처리해야함.
-    // todo 2. null 리턴은 금물.
-    // todo 3. layered architecture 적용 필요.
+    // todo 1-1. catched exception --> runtimeException로 변경 후 handling
+    // todo 1-2. http 상태코드 설정하기(200, 400, 500 etc..)
+
     // todo 4. FileInfoEntity --> FileInfoResult 로 변경 후 리턴. (modelMapper 를 활용.)
-    // todo 5. log ?? 필요.
-    // todo 6. api spec 을 정규화해야한다.
+    // todo 4-1. 호출 결과 RestResult로 반환하기 전, FileInfoResult로 변환하는 과정 필요함
 
     @GetMapping("/findAll")
     public List<RestResult> findAllFile() {
@@ -34,8 +33,7 @@ public class ImgUploadController {
     }
 
     @PostMapping("/saveImage")
-    public RestResult upload(@RequestParam("images") MultipartFile multipartFile) throws IOException {
-        // todo 요청/응답(일부) 에 대한 로그 필요.
+    public RestResult upload(@RequestParam("images") MultipartFile multipartFile) {
         log.info("/saveImage filename: {}", multipartFile.getOriginalFilename());
         return imgUploadService.upload(multipartFile);
     }

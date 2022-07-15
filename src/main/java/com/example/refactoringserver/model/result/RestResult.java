@@ -25,18 +25,6 @@ public class RestResult implements Serializable {
     // error message
     private String message;
 
-    private String filename;
-
-    private String format;
-
-    private long size;
-
-    private long width;
-
-    private long height;
-
-    private String url;
-
     private Map<String, Object> data;
 
     private List<?> list;

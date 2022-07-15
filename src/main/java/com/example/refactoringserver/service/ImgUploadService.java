@@ -32,24 +32,29 @@ public class ImgUploadService {
         return fileResult;
     }
 
-    public RestResult upload(MultipartFile multipartFile) throws IOException {
-        String s3Url = s3Uploader.upload(multipartFile);
+    public RestResult upload(MultipartFile multipartFile) {
+        try{
+            String s3Url = s3Uploader.upload(multipartFile);
 
-        BufferedImage image = ImageIO.read(multipartFile.getInputStream());
+            BufferedImage image = ImageIO.read(multipartFile.getInputStream());
 
-        final FileInfoEntity fileInfo = FileInfoEntity.builder()
-                .fileName(multipartFile.getOriginalFilename())
-                .format(multipartFile.getContentType())
-                .size(multipartFile.getSize())
-                .width(image.getWidth())
-                .height(image.getHeight())
-                .url(s3Url)
-                .build();
+            final FileInfoEntity fileInfo = FileInfoEntity.builder()
+                    .fileName(multipartFile.getOriginalFilename())
+                    .format(multipartFile.getContentType())
+                    .size(multipartFile.getSize())
+                    .width(image.getWidth())
+                    .height(image.getHeight())
+                    .url(s3Url)
+                    .build();
 
-        final FileInfoEntity fileInfoEntity = fileInfoRepository.save(fileInfo);
+            final FileInfoEntity fileInfoEntity = fileInfoRepository.save(fileInfo);
 
-        Map<String, Object> data = new LinkedHashMap<>();
-        data.put("upload", fileInfoEntity);
-        return new RestResult(data);
+            Map<String, Object> data = new LinkedHashMap<>();
+            data.put("upload", fileInfoEntity);
+            return new RestResult(data);
+        } catch(IOException e) {
+            throw new RuntimeException();
+        }
+
     }
 }
