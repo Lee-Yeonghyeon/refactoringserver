@@ -20,7 +20,7 @@ public class ImgUploadController {
     private final ImgUploadService imgUploadService;
 
     // todo 1. exception handling 추가요청 : Exception 이 발생할 확률이 있다면 catch 해서 처리해야함.
-    // todo 1-1. catched exception --> runtimeException로 변경 후 handling
+    // todo 1-1. checked exception --> runtime exception로 변경 후 handling
     // todo 1-2. http 상태코드 설정하기(200, 400, 500 etc..)
 
     // todo 4. FileInfoEntity --> FileInfoResult 로 변경 후 리턴. (modelMapper 를 활용.)
