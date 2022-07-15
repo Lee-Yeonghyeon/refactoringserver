@@ -2,6 +2,7 @@ package com.example.refactoringserver.service;
 
 import com.example.refactoringserver.exception.BadRequestException;
 import com.example.refactoringserver.model.entity.FileInfoEntity;
+import com.example.refactoringserver.model.result.FileInfoDto;
 import com.example.refactoringserver.model.result.RestResult;
 import com.example.refactoringserver.repo.FileInfoRepository;
 import lombok.RequiredArgsConstructor;
@@ -29,8 +30,11 @@ public class ImgUploadService {
 
     public List<RestResult> findAllFile(){
         List<FileInfoEntity> fileList = fileInfoRepository.findAll();
-        List<RestResult> fileResult = Arrays.asList(modelMapper.map(fileList, RestResult[].class));
-        return fileResult;
+        List<FileInfoDto> fileInfoDtoList = Arrays.asList(modelMapper.map(fileList, FileInfoDto[].class));
+
+        Map<String, Object> data = new LinkedHashMap<>();
+        Arrays.asList(data.put("findAll", fileInfoDtoList));
+        return Arrays.asList(new RestResult(data));
     }
 
     public RestResult upload(MultipartFile multipartFile) {
@@ -48,11 +52,13 @@ public class ImgUploadService {
                     .url(s3Url)
                     .build();
 
-            final FileInfoEntity fileInfoEntity = fileInfoRepository.save(fileInfo);
+            FileInfoEntity fileInfoEntity = fileInfoRepository.save(fileInfo);
+            FileInfoDto fileInfoDto = modelMapper.map(fileInfoEntity, FileInfoDto.class);
 
             Map<String, Object> data = new LinkedHashMap<>();
-            data.put("upload", fileInfoEntity);
+            data.put("upload", fileInfoDto);
             return new RestResult(data);
+
         } catch(IOException e) {
             throw new BadRequestException("지원하지 않는 파일입니다.");
         } catch (NullPointerException e){
