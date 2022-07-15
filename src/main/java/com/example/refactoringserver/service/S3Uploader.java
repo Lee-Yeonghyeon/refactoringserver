@@ -4,6 +4,7 @@ import com.amazonaws.services.s3.AmazonS3Client;
 import com.amazonaws.services.s3.model.CannedAccessControlList;
 import com.amazonaws.services.s3.model.ObjectMetadata;
 import com.amazonaws.services.s3.model.PutObjectRequest;
+import com.example.refactoringserver.exception.BadRequestException;
 import com.example.refactoringserver.telegram.RefactoryBot;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -26,7 +27,7 @@ public class S3Uploader {
     @Value("${cloud.aws.s3.bucket}")
     public String bucket;  // S3 버킷 이름
 
-    public String upload(MultipartFile multipartFile) throws IOException {
+    public String upload(MultipartFile multipartFile) {
 
         //S3에 저장될 파일 이름
         String fileName = UUID.randomUUID() + multipartFile.getOriginalFilename();
@@ -38,8 +39,10 @@ public class S3Uploader {
         try(InputStream inputStream = multipartFile.getInputStream()){
             amazonS3Client.putObject(new PutObjectRequest(bucket, fileName, inputStream, objectMetadata)
                     .withCannedAcl(CannedAccessControlList.PublicRead));
-        } catch (IOException ioE){
-            refactoryBot.sendMessage(ioE.toString());
+        } catch(IOException e) {
+            throw new BadRequestException("지원하지 않는 파일입니다.");
+        } catch (NullPointerException e){
+            throw new BadRequestException("파일이 존재하지 않습니다.");
         }
 
         return amazonS3Client.getUrl(bucket, fileName).toString();

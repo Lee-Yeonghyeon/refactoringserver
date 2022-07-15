@@ -1,5 +1,6 @@
 package com.example.refactoringserver.service;
 
+import com.example.refactoringserver.exception.BadRequestException;
 import com.example.refactoringserver.model.entity.FileInfoEntity;
 import com.example.refactoringserver.model.result.RestResult;
 import com.example.refactoringserver.repo.FileInfoRepository;
@@ -53,7 +54,9 @@ public class ImgUploadService {
             data.put("upload", fileInfoEntity);
             return new RestResult(data);
         } catch(IOException e) {
-            throw new RuntimeException();
+            throw new BadRequestException("지원하지 않는 파일입니다.");
+        } catch (NullPointerException e){
+            throw new BadRequestException("파일이 존재하지 않습니다.");
         }
 
     }

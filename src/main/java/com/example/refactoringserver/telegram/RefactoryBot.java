@@ -1,5 +1,6 @@
 package com.example.refactoringserver.telegram;
 
+import com.example.refactoringserver.exception.InternalServerException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
@@ -36,9 +37,8 @@ public class RefactoryBot extends TelegramLongPollingBot {
         message.setText(sendMessage);
         try {
             execute(message);
-            log.info("Exception Occurred: {}", sendMessage);
         } catch (TelegramApiException e) {
-            throw new RuntimeException(e);
+            throw new InternalServerException("서버(텔레그램)에 문제가 발생했습니다.");
         }
     }
 }
